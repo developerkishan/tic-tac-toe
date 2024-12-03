@@ -32,6 +32,8 @@ def is_game_won(display_word,secret_word):
 def main():
     words = ['badminton', 'coding', 'business', 'coach', 'sports', 'speaker']
     secret_word = random.choice(words)
+    secret_word_dict = dict(enumerate(secret_word))
+
     guessed_chars = set()
     attempts = 8
     print(WELCOME_MESSGE)
@@ -42,18 +44,17 @@ def main():
         if not is_valid_input(guessed_char,guessed_chars):
             continue
         is_found = 'no'
-        for count in range(len(secret_word)):
-            if guessed_char == secret_word[count]:
-                display_word[count]= guessed_char
-                print(GOOD_GUESS_MESSAGE)
-                guessed_chars.add(guessed_char)
-                print_status(attempts,display_word)
-                is_found = 'yes'
-        if is_found == 'no':
+        #i want to look on the basis of the dictionary 
+        keys = [key for key,value in secret_word_dict.items() if guessed_char == value]
+        if keys == []:
             print(INCORRECT_GUESS_MESSAGE)
             attempts-=1
             print_status(attempts,display_word)
-    
+        else:
+            print(GOOD_GUESS_MESSAGE)
+            for key in keys:
+                display_word[key]= guessed_char
+                print_status(attempts,display_word)
         if is_game_won(display_word,secret_word):
             print(f"{GAME_WON_MESSAGE} {secret_word}")
             break
