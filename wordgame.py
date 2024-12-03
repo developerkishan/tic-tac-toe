@@ -1,32 +1,64 @@
 import random
-words = ['badminton', 'coding', 'business', 'coach', 'sports', 'speaker']
-secret_word = random.choice(words)
-guessed_chars = set()
-attempts = 8
-print("Welcome to the word Guessing Game!")
-display_word = ['_' for i in range(len(secret_word))]
-print(''.join(display_word))
-print(f"Remaining attempts: {attempts}" )
-while (attempts > 0):
-    guessed_char = input("Player inputs: ")
-    guessed_chars.add(guessed_char)
-    is_found = 'no'
 
-    for count in range(len(secret_word)):
-        if guessed_char == secret_word[count]:
-            display_word[count]= guessed_char
-            print("Good guess!")
-            print(''.join(display_word))
-            print(f"Remaining attempts: {attempts}" )
-            is_found = 'yes'
-    if is_found == 'no':
-        print("Oops! That letter is not in the word.")
-        print(''.join(display_word))
-        attempts-=1
-        print(f"Remaining attempts: {attempts}" )
-    
+WELCOME_MESSGE = "Welcome to the Word Guessing Game!"
+GOOD_GUESS_MESSAGE = "Good guess!"
+INVALID_INPUT_MESSAGE = "Please enter a valid alphabet"
+INVALID_LENGTH_MESSAGE = "Please enter only one alphabet character"
+ALREADY_GUESSED_MESSAGE = "You've already guess the letter :"
+INCORRECT_GUESS_MESSAGE = "Oops! That letter is not in the word."
+GAME_WON_MESSAGE = "Congratulations! You guessed the word:"
+GAME_OVER_MESSAGE = "Game over! The word was:"
+REMAINING_ATTEMPTS_MESSAGE = "Remaining attempts:"
+
+
+def print_status(attempts,display_word):
+    print(f"{REMAINING_ATTEMPTS_MESSAGE} {attempts}" )
+    print(' '.join(display_word))
+
+def is_valid_input(guessed_char , guessed_chars):
+    if not  guessed_char.isalpha():
+        print(INVALID_INPUT_MESSAGE)
+    if len(guessed_char) > 1:
+        print(INVALID_LENGTH_MESSAGE)
+    if guessed_char in guessed_chars:
+        print(f"{ALREADY_GUESSED_MESSAGE} {guessed_char}")
+        return False
+    return True
+def is_game_won(display_word,secret_word):
     if ''.join(display_word) == secret_word:
-        print("Congratulations! You guessed the word:", secret_word)
-        break
-if attempts ==0:
-    print("Game over! The word was:", secret_word)
+        return True
+    return False
+
+def main():
+    words = ['badminton', 'coding', 'business', 'coach', 'sports', 'speaker']
+    secret_word = random.choice(words)
+    guessed_chars = set()
+    attempts = 8
+    print(WELCOME_MESSGE)
+    display_word = ['_' for i in range(len(secret_word))]
+    print_status(attempts,display_word) 
+    while (attempts > 0):
+        guessed_char = input("Player inputs: ").lower()
+        if not is_valid_input(guessed_char,guessed_chars):
+            continue
+        is_found = 'no'
+        for count in range(len(secret_word)):
+            if guessed_char == secret_word[count]:
+                display_word[count]= guessed_char
+                print(GOOD_GUESS_MESSAGE)
+                guessed_chars.add(guessed_char)
+                print_status(attempts,display_word)
+                is_found = 'yes'
+        if is_found == 'no':
+            print(INCORRECT_GUESS_MESSAGE)
+            attempts-=1
+            print_status(attempts,display_word)
+    
+        if is_game_won(display_word,secret_word):
+            print(f"{GAME_WON_MESSAGE} {secret_word}")
+            break
+    if attempts ==0:
+        print(f"{GAME_OVER_MESSAGE} {secret_word}")
+
+if __name__ == "__main__":
+    main()
