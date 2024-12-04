@@ -1,0 +1,76 @@
+date - 4th December , 2024
+Listening to Philip Col 
+The coding project that improved my skill the most - 
+
+There are mostly all the application which needs authentication , Chat and Profile Building . 
+We used react native , node js , and my sql . 
+
+Node.js is a JavaScript Runtime environment -- it's what actually executes all your server-side
+code . Express is a framework that provides basic features for developing a web application in Node.js 
+While Node.js is already capable of listening to requests on a port , Express makes it simpler to set up a web server 
+eliminating boilerplate code and offering a simpler API for creating endpoints. 
+
+GraphQL is a query language , GraphQL.js is the JavaScript implementation of GraphQL. Neither is capable of creating 
+an endpoint or web server . GraphQL itself doesn't listen to requests being made to a particular sport . 
+
+Node.js 
+A runtime environment that allows JavaScript to run on the server . It's a low-level environment that 
+provides essential modules for server-side JavaScript . 
+
+Express.js 
+A web application framework that's built on top of node.js . It provides higher-level abstractions for web
+development , including features like routing , middleware and templating . 
+
+
+Firebase
+Firebase is Google's mobile application development platform that helps you build , improve and grow your application . 
+Firebase is Google's mobile application development platform . (yes , that again)
+You're gonna save a ton of time and money using Firebase products rather than trying to build them yourself . 
+You can use all of it , or none of it . or just the bits you want. 
+All those bits are designed to work well together , managed in one console . 
+https://medium.com/firebase-developers/what-is-firebase-the-complete-story-abridged-bcc730c5f2c0
+
+Serverless architecture
+Serverless architecture is a software design approach that allows developers to build and run applications without 
+managing the underlying infrastructure . In a serverless architecture , the cloud service provider is responsible for 
+managing adn scaling the cloud infrastructure that runs on the application code. 
+
+
+Firestore 
+Firestore is a cloud-hosted , NoSQL document database from Google that's part of Firebase. 
+Firestore is a JSON-compatible database that stores data in documents , which are organized 
+into collections . Each document contains a set of key-value pairs.  
+
+Reading through the documentation helps how the software is documented. 
+
+
+
+Date - 4 December , 2024
+Before you start coding , learn about the low level language . 
+
+1. Code in a low level language .
+i am pretty sure that many of you will be able to code in the language like python , 
+javaScript or Ruby . 
+So , take the concepts and code in low level language like C 
+To not leak memory , to not give access to hackers , and to not crash when running , u need 
+to code in C .
+
+2 . Learn as Assembly varient . 
+Learning the CPU is going to be a superpower .
+
+3 . Learn reverse engineering 
+
+
+Date - 4 December , 2024
+Challenging projects every programmer should try 
+
+Before even starting to code , learn what are you intrested in . 
+
+Text Editor 
+2D game - Space Invaders 
+Compiler 
+Mini Operating System 
+Spreadsheet(hard)
+Video game (hard)
+
+
