@@ -74,3 +74,81 @@ Spreadsheet(hard)
 Video game (hard)
 
 
+6th December - 2024 
+Everybody needs to learn to code. 
+
+Coding is the new literacy . 
+
+1 . Coding is Hard Work 
+Hard work is more valuable then Talent. Coding is just like playing an instrument ,at first you will suck but 
+later you are going to enjoy it . 
+2. Learn Patterns 
+It totally doesn't matter which language you use , it is just that you should be good at one .
+In programming what matters is problem solving , so it hardly make any difference to use any 
+language . 
+Once you know the use case of for loop , while loop , it hardly matters to use any language . 
+Learning syntax is not going to help , 
+At large companies, they are going to test your problem solving skills looking so they 
+are going to let you write pseudocode. 
+3. Stop watching , Start doing . 
+Will you be able to play guitar , if you are watching to play guitar . 
+Books and tuturials are great , but it is not going to help you . 
+If you are very serious about coding , you should be coding a minimum hours per day , 
+so that is the reason why the pilot needs to have miniumum flying hours.  
+Experience matters . 
+4. Stay Healthy  
+Health is important . 
+5 . Richard Feyman
+    . Choose a topic 
+    . Explain it to a 12 year old 
+    . Reflect , refine and simplify 
+    . organize and review 
+in short you learn most about programming , when you try to teach about it to someone else . 
+Become a mentor . 
+6. Dopamine Hits . 
+Achievable goals , needs to done everyday . 
+7. But not too hard 
+Pace yourself and take a break. 
+8. Think like a engineer . 
+
+
+
+
+
+
+
+
+
+Data Engineering with Python 
+Data engineering is the development , operation and maintainance of data infrastructure , either on-premises or in the cloud 
+(or hybrid or multi-cloud) comprising databases and pipelines to extract , transform and load data . 
+
+Data engineering is what makes data science possible. 
+Data engineeing need to understand data formats , models, and structures to efficiently transport data , whereas 
+data scientists utilize them for building statistical models and mathematical computation . 
+
+Data engineering tools :-
+Volume , Variety , Velocity . 
+The volume of data has grown substantially , moving a thousand records from database requires different tools and techniques then 
+moving millions of rows or handling millions of transactions a minute. 
+Data engineers need tools that handle a variety of data formats in different locations (databases , APIs , files)
+The velocity of data is always increasing . 
+
+The most common databases used in data warehousing are Amazon Redshift , Google BigQuery , 
+Apache Cassandra and other NoSQL databases such as Elasticsearch . 
+Amazon Redshift , Google BigQuery and Cassandra deviate from the traditional rows of 
+relational databases and store data in a columnar format. 
+
+Data processing engines :-
+Apache Spark works with Python DataFrames , making it an ideal tool for Python developers. 
+Apache Kafka is another option , Apache Flink , and Apache storm 
+
+
+Data Pipelines : 
+Combining a transactional database , a programming language , a processing engine , and a data warehouse results in 
+a pipeline. 
+
+Apache Airflow : 
+the most popular framework for building data engineering pipelines in PYthon is Apache airflow . 
+
+
