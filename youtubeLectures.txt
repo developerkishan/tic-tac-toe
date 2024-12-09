@@ -1,3 +1,6 @@
+https://www.freecodecamp.org/news/python-projects-for-beginners/
+
+
 date - 4th December , 2024
 Listening to Philip Col 
 The coding project that improved my skill the most - 
@@ -150,5 +153,7 @@ a pipeline.
 
 Apache Airflow : 
 the most popular framework for building data engineering pipelines in PYthon is Apache airflow . 
+
+
 
 
